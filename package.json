@@ -1,0 +1,11 @@
+{
+  "name": "add-bogus-refresh-token",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
