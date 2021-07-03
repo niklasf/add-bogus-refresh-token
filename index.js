@@ -4,8 +4,6 @@ const app = express();
 const port = 9700;
 const backend = 'http://localhost:9004';
 
-app.get('/oauth', proxy(backend));
-
 app.post('/oauth', proxy(backend, {
   userResDecorator: (_proxyRes, proxyResData, _userReq, _userRes) => {
     const data = JSON.parse(proxyResData.toString('utf8'));
